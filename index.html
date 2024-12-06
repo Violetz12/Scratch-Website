@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find the Key - Escape Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/5a8e77b133.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      footer {
+        background: #222324;
+        color: white;
+        padding: 40px 0;
+        text-align: center;
+        font-family: "Arial", sans-serif;
+        position: relative;
+        box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        width: calc(100% - 250px); /* Same width as main content */
+        margin-left: 250px; /* Offset to align with main content */
+      }
+
+      footer p {
+        font-size: 16px;
+        margin-bottom: 20px;
+        font-weight: bold;
+        letter-spacing: 0.5px;
+      }
+
+      .footer-links {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+      }
+
+      .footer-links li {
+        margin: 0 20px;
+      }
+
+      .footer-links a {
+        color: white;
+        font-size: 18px;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s ease, transform 0.3s ease;
+      }
+
+      .footer-links a:hover {
+        color: #ffd700;
+        transform: scale(1.1);
+      }
+
+      footer::before {
+        content: "";
+        display: block;
+        width: 50%;
+        height: 1px;
+        margin: 20px auto;
+        background-color: #fff;
+      }
+
+      footer .social-icons {
+        margin-top: 20px;
+        font-size: 22px;
+      }
+
+      footer .social-icons a {
+        color: white;
+        margin: 0 15px;
+        text-decoration: none;
+        transition: color 0.3s ease, transform 0.3s ease;
+      }
+
+      footer .social-icons a:hover {
+        color: #ffd700;
+        transform: scale(1.2);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cursor"></div>
+
+    <header>
+      <h1>Find the Key</h1>
+      <p class="subtitle">An Escape Game Adventure by Zhi Cheng</p>
+    </header>
+
+    <div class="main-layout">
+      <aside class="sidebar">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#how-to-play">How to Play</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#play-now">Play Now</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#explore">Explore More</a></li>
+        </ul>
+      </aside>
+
+      <main>
+        <section id="about">
+          <h2>About the Game</h2>
+          <p>
+            "Find the Key" is an engaging escape game created in Scratch. Your
+            mission? Solve puzzles and escape from locked rooms by finding
+            hidden keys. Test your logic, problem-solving, and math skills in
+            this fun and challenging adventure!
+          </p>
+        </section>
+
+        <section id="how-to-play">
+          <h2>How to Play</h2>
+          <ol>
+            <li>Explore the room using your mouse to search for clues.</li>
+            <li>Interact with objects to uncover hints and keys.</li>
+            <li>
+              Solve puzzles to unlock doors and progress to the next level.
+            </li>
+          </ol>
+        </section>
+
+        <section id="features">
+          <h2>Features</h2>
+          <ul>
+            <li><i class="fa-solid fa-check"></i> Quick and Fun Gameplay</li>
+            <li><i class="fa-solid fa-check"></i> Mouse-Only Controls</li>
+            <li><i class="fa-solid fa-check"></i> Challenging Math Puzzles</li>
+            <li><i class="fa-solid fa-check"></i> Multiple Levels</li>
+            <li><i class="fa-solid fa-check"></i> Immersive Visual Design</li>
+          </ul>
+        </section>
+
+        <section id="gallery">
+          <h2>Gallery</h2>
+          <div class="gallery">
+            <img src="PIC 1.png" alt="Screenshot of the game interface" />
+            <img src="PIC 2.png" alt="Puzzle example from the game" />
+            <img src="PIC 3.png" alt="Room featuring the hidden key" />
+          </div>
+        </section>
+
+        <section id="play-now">
+          <h2>Play Now</h2>
+          <p>
+            Are you ready to escape? Test your skills by playing *Find the Key*
+            now!
+          </p>
+          <iframe
+            src="https://scratch.mit.edu/projects/1039296896/embed"
+            allowtransparency="true"
+            width="485"
+            height="402"
+            frameborder="0"
+            scrolling="no"
+            allowfullscreen
+          ></iframe
+          ><br />
+          <a
+            href="https://scratch.mit.edu/projects/1039296896/"
+            class="play-button"
+            >Play Now</a
+          >
+        </section>
+
+        <section id="reviews">
+          <h2>Reviews</h2>
+          <p>"I like how there's different endings!" - Jane Doe</p>
+          <p>"I like the math questions!" - John Doe</p>
+        </section>
+
+        <section id="explore">
+          <h2>Explore More Games</h2>
+          <p>Discover other exciting projects by Zhi Cheng:</p>
+
+            <div class="image-container">
+              <div class="image-item">
+                <a href="https://youtu.be/qXly02rezzs">
+                <img
+                  src="Screenshot 2024-11-16 214915.png"
+                  alt="Lululemon"
+                  style="
+                    width: 300px;
+                    height: 250px;
+                    border-radius: 30px;
+                    object-fit: cover;
+                    transition: transform 0.3s ease;
+                    margin: 10px;
+                  "
+                />
+                </a>
+                <p>Lululemon</p>
+              </div>
+
+              <div class="image-item">
+                <a href="https://scratch.mit.edu/projects/1032197465/">
+                <img
+                  src="Screenshot 2024-11-16 220129.png"
+                  alt="Jump"
+                  style="
+                    width: 300px;
+                    height: 250px;
+                    border-radius: 30px;
+                    object-fit: cover;
+                    transition: transform 0.3s ease;
+                    margin: 10px;
+                  "
+                />
+              </a>
+                <p>Space Jumping</p>
+              </div>
+
+              <div class="image-item">
+                <a href="https://scratch.mit.edu/projects/1007895486/">
+                <img
+                  src="Screenshot 2024-11-16 220550.png"
+                  alt="Jump"
+                  style="
+                    width: 300px;
+                    height: 250px;
+                    border-radius: 30px;
+                    object-fit: cover;
+                    transition: transform 0.3s ease;
+                    margin: 10px;
+                  "
+                /></a>
+                <p>Princess Fatal Demise</p>
+              </div>
+            </div>
+          </section>
+        </section>
+      </main>
+    </div>
+
+    <footer>
+      <p>Created by Zhi Cheng &copy; 2024</p>
+      <ul class="footer-links">
+        <li><a href="index.html">Find the Key</a></li>
+        <li><a href="cac.html">Character and Creator</a></li>
+        <li><a href="feedback.html">Feedback Form</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>
