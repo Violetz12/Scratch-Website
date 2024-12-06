@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback - Find the Key</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f4f7f6;
+        color: #333;
+      }
+
+      header {
+        text-align: center;
+        padding: 0.5em 1em;
+        background-color: #ffffff;
+        width: 100%;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      header h1 {
+        font-size: 3em;
+        color: #333;
+        margin-bottom: 0.5em;
+      }
+
+      header p {
+        font-size: 1.25em;
+        color: #666;
+      }
+
+      /* Feedback Form Styling */
+      main {
+        padding: 20px;
+        max-width: 800px;
+        margin: 20px auto;
+        background-color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        flex-grow: 1; /* Make the main content area flexible */
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      label {
+        font-size: 1.2em;
+        margin-bottom: 5px;
+      }
+
+      input,
+      textarea {
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 1em;
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+      input:focus,
+      textarea:focus {
+        border-color: #333;
+        outline: none;
+      }
+
+      .submit-btn {
+        background-color: #333;
+        color: white;
+        border: none;
+        padding: 12px;
+        font-size: 1.2em;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .submit-btn:hover {
+        background-color: #555;
+      }
+      footer {
+        background: #222324;
+        color: white;
+        padding: 40px 0;
+        text-align: center;
+        font-family: "Arial", sans-serif;
+        position: relative;
+        box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+      }
+
+      footer p {
+        font-size: 16px;
+        margin-bottom: 20px;
+        font-weight: bold;
+        letter-spacing: 0.5px;
+      }
+
+      .footer-links {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+      }
+
+      .footer-links li {
+        margin: 0 20px;
+      }
+
+      .footer-links a {
+        color: white;
+        font-size: 18px;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s ease, transform 0.3s ease;
+      }
+
+      .footer-links a:hover {
+        color: #ffd700;
+        transform: scale(1.1);
+      }
+
+      footer::before {
+        content: "";
+        display: block;
+        width: 50%;
+        height: 1px;
+        margin: 20px auto;
+        background-color: #fff;
+      }
+
+      footer .social-icons {
+        margin-top: 20px;
+        font-size: 22px;
+      }
+
+      footer .social-icons a {
+        color: white;
+        margin: 0 15px;
+        text-decoration: none;
+        transition: color 0.3s ease, transform 0.3s ease;
+      }
+
+      footer .social-icons a:hover {
+        color: #ffd700;
+        transform: scale(1.2);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Find the Key-Feedback</h1>
+      <p class="subtitle">Any suggestions for future updates?</p>
+    </header>
+
+    <main>
+      <form action="https://formspree.io/f/mdkozqwq" method="POST">
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          placeholder="Enter your name"
+        />
+
+        <label for="email">Email: </label>
+        <input
+          type="text"
+          id="email"
+          name="email"
+          required
+          placeholder="Enter your email"
+        />
+
+        <label for="feedback">Feedback:</label>
+        <textarea
+          id="feedback"
+          name="feedback"
+          rows="4"
+          required
+          placeholder="Write your feedback here..."
+        ></textarea>
+
+        <button type="submit" class="submit-btn">Submit Feedback</button>
+      </form>
+    </main>
+
+    <footer>
+      <p>Created by Zhi Cheng &copy; 2024</p>
+      <ul class="footer-links">
+        <li><a href="index.html">Find the Key</a></li>
+        <li><a href="cac.html">Character and Creator</a></li>
+        <li><a href="feedback.html">Feedback Form</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>
